@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-background text-text-primary antialiased;
+  }
+
+  body {
+    @apply min-h-screen;
+  }
+
+  /* Typography defaults */
+  h1 {
+    @apply text-3xl font-medium tracking-tight text-text-primary;
+  }
+
+  h2 {
+    @apply text-xl font-medium tracking-tight text-text-primary;
+  }
+
+  h3 {
+    @apply text-lg font-medium text-text-primary;
+  }
+
+  p {
+    @apply text-text-secondary leading-relaxed;
+  }
+
+  a {
+    @apply text-text-primary underline-offset-4 hover:underline;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-accent/20 text-text-primary;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply mx-auto max-w-content px-6;
+  }
+}
+
